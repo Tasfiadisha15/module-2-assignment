@@ -1,7 +1,4 @@
 /* for common styles */
-body {
-    font-family: "Arial", sans-serif;
-}
 
 * {
     margin: 0;
@@ -24,4 +21,103 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+section {
+    border: 1px solid #000;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(102, 93, 93);
+}
+
+.Chicken {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c06060;
+    color: #000000;
+    padding: 10px;
+}
+
+.beef {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ce1616;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.sushi {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f5cb57;
+    color: #000000;
+    padding: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+/* desktop view */
+@media screen and (min-width: 992px) {
+    section {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* tablet view */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .section-1,
+    .section-2 {
+        float: left;
+        width: 50%;
+    }
+
+    .section-3 {
+        clear: both;
+        width: 100%;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width: 767px) {
+    section {
+        width: 100%;
+    }
+}
+
+
+/*windows style */
+@media only screen and (max-width: 991px) {
+    section {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    section:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    section {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
 }
